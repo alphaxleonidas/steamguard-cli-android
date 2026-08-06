@@ -18,9 +18,11 @@ not the one this guide covers.)
   in `Cargo.toml` and can just be left out at build time. No source changes
   needed.
 
+## STEPS :
+
 ## 1. Install Termux
 
-Get it from **Play Store** — **not** the F-Droid or GitHub releases, which are outdated and unmaintained.
+Get it from **Play Store** — not the F-Droid or GitHub releases, which are outdated and unmaintained.
 
 (Optional but useful later: also install the separate **Termux:API** app
 from the same source, for phone-integration commands.)
@@ -66,12 +68,6 @@ unzip steamguard-cli-android.zip
 `termux-setup-storage` creates for you. If the filename differs, check with
 `ls storage/downloads/` first.)
 
-Alternatively, clone directly with git if you have a repo URL you trust —
-for something handling Steam credentials, that means either the official
-project repo or a fork you personally control and have reviewed. Don't
-clone and build an unfamiliar third-party fork sight-unseen; there's no way
-to verify what it actually does before it's running with access to your
-`maFile`s.
 
 Alternatively, cloning the GitHub repo is the **Recommended** method. Make
 sure you trust the repo because it will handling your Steam credentials.
@@ -100,6 +96,17 @@ What this does:
 First build: expect roughly 10–20 minutes depending on the device, mostly
 spent compiling dependencies. Rebuilds after code changes are much faster.
 
+Alternatively, you can download the **precompiled binary** from [Releases](https://github.com/alphaxleonidas/steamguard-cli-android/releases)
+and move it to the Termix directory using the following commands (skip step 5): 
+```bash
+termux-setup-storage
+cd ~
+cp -v storage/downloads/steamguard $PREFIX/bin/
+chmod +x $PREFIX/bin/steamguard
+steamguard --help
+```
+
+
 ## 5. Verify and install onto PATH
 
 ```bash
@@ -115,7 +122,7 @@ chmod +x $PREFIX/bin/steamguard
 steamguard --help
 ```
 
-## 6. Load an account
+## 6. Load an account (if you already have a file)
 
 **If you have an existing `maFile`/manifest folder** (e.g. from Steam
 Desktop Authenticator or a previous `steamguard-cli` install):
@@ -138,7 +145,25 @@ steamguard import --files ~/gaben.maFile
 (`import` requires the file be unencrypted; replace the filename with your
 actual one.)
 
-## Security notes specific to phone storage
+## 7. Setup an account
+```bash
+steamguard setup
+```
+It creates two files in `~/.config/steamguard-cli/maFiles`. Be sure to 
+**create a backup** of those files.
+
+For commands, use: 
+```bash
+steamguard --help
+```
+
+## IMPORTANT NOTE
+  `steamguard setup` (command to setup steamguard-cli as a 2FA) **has not 
+  been tested fully** and if you do, make sure you do it on your **OWN 
+  RISK**. The steps are the same as the original repo: [Usage](https://github.com/alphaxleonidas/steamguard-cli-android#usage)
+  Make sure to read it fully.
+  
+## Notes specific to phone storage
 
 - `/sdcard` (shared storage, including Downloads) is readable by any app
   with storage permission — it is **not** private the way Termux's own
@@ -157,11 +182,7 @@ actual one.)
   system `libc`, so it runs on any Termux install on a compatible device
   without missing-library issues.
 
-# IMPORTANT NOTE
-  `steamguard setup` **has not been tested fully** and if you do, make sure 
-  you do it on your OWN RISK. In testing, there was small bug which I 
-  assume was due to the original repo code. Everything else seemed to work
-  just fine. 
+
   
 ## Day-to-day use
 
