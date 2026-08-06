@@ -1,3 +1,11 @@
+# steamguard-cli-android
+  How to build on PC? [Link](https://github.com/alphaxleonidas/steamguard-cli-android/blob/master/docs/ANDROID.md)
+  How to build on Android Mobile? [Recommended] [Link](https://github.com/alphaxleonidas/steamguard-cli-android/edit/master/docs/TERMUX_BUILD.md)
+
+## How to run on Android? 
+  Use `Termux` as the terminal. [Guide](https://github.com/alphaxleonidas/steamguard-cli-android/blob/master/docs/TERMUX_BUILD.md#6-load-an-account-if-you-already-have-a-file)
+
+# Original Repo 
 # steamguard-cli
 
 [![Lint, Build, Test](https://github.com/dyc3/steamguard-cli/actions/workflows/rust.yml/badge.svg)](https://github.com/dyc3/steamguard-cli/actions/workflows/rust.yml)
@@ -5,7 +13,7 @@
 
 A command line utility for setting up and using Steam Mobile Authenticator (AKA Steam 2FA). It can also be used to respond to trade, market, and any other steam mobile confirmations that you would normally get in the app.
 
-**The only legitimate place to download steamguard-cli binaries is through this repo's releases, or by any package manager that is linked in this document.**
+**The only legitimate place to download steamguard-cli binaries is through ~~this~~ *original* repo's releases, or by any package manager that is linked in this document.**
 
 # Disclaimer
 **This utility is effectively in beta. Use this software at your own risk. Make sure to back up your maFiles regularly, and make sure to actually write down your revocation code. If you lose both of these, we can't help you, your only recourse is to beg Steam support.**
@@ -19,7 +27,7 @@ If you have no idea what the rest of this document is talking about, go read the
 - Generate 2FA codes
 - Respond to trade, market or any other confirmations
 - Encrypted storage of your 2FA secrets
-  - With the option to store your encryption passkey in the system keyring
+  - ~~With the option to store your encryption passkey in the system keyring~~ *Not available for Android*
 - Special memory-clearing data structures to prevent leaking secrets
 - QR code generation for importing 2FA secrets into other applications, like KeeWeb
 - QR code logins for quickly logging into Steam on a new device, like the Steam Deck
