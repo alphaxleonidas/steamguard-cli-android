@@ -96,6 +96,8 @@ What this does:
 First build: expect roughly 10–20 minutes depending on the device, mostly
 spent compiling dependencies. Rebuilds after code changes are much faster.
 
+## Download PreCompiled File: 
+
 Alternatively, you can download the **precompiled binary** from [Releases](https://github.com/alphaxleonidas/steamguard-cli-android/releases)
 and move it to the Termix directory using the following commands (skip step 5): 
 ```bash
