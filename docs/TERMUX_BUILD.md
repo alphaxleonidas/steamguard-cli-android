@@ -70,7 +70,7 @@ unzip steamguard-cli-android.zip
 
 
 Alternatively, cloning the GitHub repo is the **Recommended** method. Make
-sure you trust the repo because it will handling your Steam credentials.
+sure you trust the repo because it will be handling your Steam credentials.
 
 ```bash
 git clone https://www.github.com/alphaxleonidas/steamguard-cli-android.git
