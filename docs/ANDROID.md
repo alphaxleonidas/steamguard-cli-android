@@ -1,6 +1,6 @@
 # Building steamguard-cli for Termux (Android)
 
-**This method hasnt been tested, yet.**
+## **This method hasnt been tested, yet.**
 
 This produces a native `steamguard` binary you run inside the Termux terminal
 app. This is NOT a Play Store or GUI apk — only the CLI binary running in a real terminal (Termux). 
