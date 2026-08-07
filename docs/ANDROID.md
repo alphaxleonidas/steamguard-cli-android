@@ -1,8 +1,9 @@
 # Building steamguard-cli for Termux (Android)
 
+**This method hasnt been tested, yet.**
+
 This produces a native `steamguard` binary you run inside the Termux terminal
-app. This is NOT a Play Store app — there is no GUI here, only the CLI
-running in a real terminal.
+app. This is NOT a Play Store or GUI apk — only the CLI binary running in a real terminal (Termux). 
 
 ## Why this works
 
@@ -72,7 +73,7 @@ Then, inside Termux itself:
 
 ```bash
 termux-setup-storage   # one-time, grants Termux access to /sdcard
-cp /sdcard/Download/steamguard $PREFIX/bin/steamguard
+cp /storage/downloads/steamguard $PREFIX/bin/steamguard
 chmod +x $PREFIX/bin/steamguard
 steamguard --help
 ```
