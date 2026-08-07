@@ -6,7 +6,7 @@
 ## How to run on Android? 
   Use `Termux` as the terminal. **[Guide](https://github.com/alphaxleonidas/steamguard-cli-android/blob/master/docs/TERMUX_BUILD.md#6-load-an-account-if-you-already-have-a-file)**
 
-# Original Repo 
+#      <   --   Original Repo    --   >
 # steamguard-cli
 
 [![Lint, Build, Test](https://github.com/dyc3/steamguard-cli/actions/workflows/rust.yml/badge.svg)](https://github.com/dyc3/steamguard-cli/actions/workflows/rust.yml)
