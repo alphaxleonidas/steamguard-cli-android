@@ -1,7 +1,7 @@
 # steamguard-cli-android
   How to build on PC? **[Link](https://github.com/alphaxleonidas/steamguard-cli-android/blob/master/docs/ANDROID.md)**
   
-  How to build on Android Mobile? **[Recommended] [Link](https://github.com/alphaxleonidas/steamguard-cli-android/edit/master/docs/TERMUX_BUILD.md)**
+  How to build on Android Mobile? **[Recommended] [Link](https://github.com/alphaxleonidas/steamguard-cli-android/blob/master/docs/TERMUX_BUILD.md)**
 
 ## How to run on Android? 
   Use `Termux` as the terminal. **[Guide](https://github.com/alphaxleonidas/steamguard-cli-android/blob/master/docs/TERMUX_BUILD.md#download-precompiled-file)**
