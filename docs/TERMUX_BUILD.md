@@ -22,7 +22,8 @@ not the one this guide covers.)
 
 ## 1. Install Termux
 
-Get it from **Play Store** — not the F-Droid or GitHub releases, which are outdated and unmaintained.
+Get it from **Play Store** or **GitHub** — not the F-Droid releases, which may 
+install the wrong version for your device.
 
 (Optional but useful later: also install the separate **Termux:API** app
 from the same source, for phone-integration commands.)
@@ -34,8 +35,8 @@ from the same source, for phone-integration commands.)
   `/data/data/com.termux/files/usr/` (`$PREFIX`).
 - Files inside Termux's own filesystem are executable. Files in Android
   shared storage (`/sdcard`, including Downloads) are mounted `noexec` and
-  cannot be run directly, regardless of `chmod +x` — see the security notes
-  section below.
+  cannot be run directly, regardless of `chmod +x` — see the notes section
+  at the end.
 
 ## 2. Install Rust and git
 
@@ -68,6 +69,9 @@ unzip steamguard-cli-android.zip
 `termux-setup-storage` creates for you. If the filename differs, check with
 `ls storage/downloads/` first.)
 
+*Note: The name can differ based on the Termux version and where it was 
+installed from. In which case, you can check the directory name by running 
+`ls -a` after running `termux-storage-setup`. Adjust the file path accordingly.*
 
 Alternatively, cloning the GitHub repo is the **Recommended** method. Make
 sure you trust the repo because it will be handling your Steam credentials.
