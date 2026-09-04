@@ -6,17 +6,6 @@ desktop machine required. (If you want to cross-compile from a desktop
 instead, see `docs/ANDROID.md` — that's a different, more involved route,
 not the one this guide covers.)
 
-## Why this is possible without extra work
-
-- Networking (`reqwest`) uses `rustls-tls`, not OpenSSL — no OpenSSL build
-  headaches.
-- The TLS crypto backend (`ring`) is plain C, no C++ runtime needed.
-- Account crypto (`aes`, `cbc`, `argon2`, `pbkdf2`, `rsa`, `sha1`) and gzip
-  support (`flate2`/`miniz_oxide`) are all pure Rust.
-- The only feature that doesn't work headless — `keyring`, which normally
-  caches your encryption passphrase via the OS — is already feature-gated
-  in `Cargo.toml` and can just be left out at build time. No source changes
-  needed.
 
 ## STEPS :
 
@@ -69,11 +58,13 @@ unzip steamguard-cli-android.zip
 `termux-setup-storage` creates for you. If the filename differs, check with
 `ls storage/downloads/` first.)
 
-*Note: The name can differ based on the Termux version and where it was 
+*Note: The name of the directory can differ based on the Termux version and where it was 
 installed from. In which case, you can check the directory name by running 
 `ls -a` after running `termux-storage-setup`. Adjust the file path accordingly.*
 
-Alternatively, cloning the GitHub repo is the **Recommended** method. Make
+**Alternatively**,
+
+Cloning the GitHub repo is the **Recommended** method. Make
 sure you trust the repo because it will be handling your Steam credentials.
 
 ```bash
@@ -168,7 +159,7 @@ steamguard --help
   been tested fully** and if you do, make sure you do it on your **OWN 
   RISK**. The steps are the same as the original repo: [Usage](https://github.com/alphaxleonidas/steamguard-cli-android#usage)
   Make sure to read it fully. So far there have been no issues with the 
-  android version.
+  android version. It may break if Steam tries to change things.
   
 ## Notes specific to phone storage
 
