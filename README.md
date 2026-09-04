@@ -1,14 +1,3 @@
-## TESTING BRANCH ... Synced with upstream. Untested builds because i want to keep the build's version number intact with the upstream.
-
-# steamguard-cli-android
-  How to build on PC? **[Link](https://github.com/alphaxleonidas/steamguard-cli-android/blob/master/docs/ANDROID.md)**
-  
-  How to build on Android Mobile? **[Recommended] [Link](https://github.com/alphaxleonidas/steamguard-cli-android/blob/master/docs/TERMUX_BUILD.md)**
-
-## How to run on Android? 
-  Use `Termux` as the terminal. **[Guide](https://github.com/alphaxleonidas/steamguard-cli-android/blob/master/docs/TERMUX_BUILD.md#download-precompiled-file)**
-
-#      <   --   Original Repo    --   >
 # steamguard-cli
 
 [![Lint, Build, Test](https://github.com/dyc3/steamguard-cli/actions/workflows/rust.yml/badge.svg)](https://github.com/dyc3/steamguard-cli/actions/workflows/rust.yml)
@@ -56,6 +45,14 @@ Otherwise, you can download binaries from the releases.
 ```
 cargo build --release
 ```
+
+# steamguard-cli-android
+  How to build on PC? **[Link](https://github.com/dyc3/steamguard-cli/blob/master/docs/ANDROID.md)**
+  
+  How to build on Android Mobile? **[Recommended] [Link](https://github.com/dyc3/steamguard-cli/blob/master/docs/TERMUX_BUILD.md)**
+
+## How to run on Android? 
+  Use `Termux` as the terminal. **[Guide](https://github.com/dyc3/steamguard-cli/blob/master/docs/TERMUX_BUILD.md#download-precompiled-file)**
 
 # Usage
 `steamguard-cli` looks for your `maFiles/manifest.json` in at these paths, in this order:
