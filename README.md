@@ -1,3 +1,5 @@
+## <TESTING BRANCH> ... Synced with upstream. Untested builds because i want to keep the version number intact with the upstream.
+
 # steamguard-cli-android
   How to build on PC? **[Link](https://github.com/alphaxleonidas/steamguard-cli-android/blob/master/docs/ANDROID.md)**
   
