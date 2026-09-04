@@ -46,13 +46,16 @@ Otherwise, you can download binaries from the releases.
 cargo build --release
 ```
 
-# steamguard-cli-android
-  How to build on PC? **[Link](https://github.com/dyc3/steamguard-cli/blob/master/docs/ANDROID.md)**
-  
-  How to build on Android Mobile? **[Recommended] [Link](https://github.com/dyc3/steamguard-cli/blob/master/docs/TERMUX_BUILD.md)**
+## steamguard-cli-android
+ 
+ Android compatible version of steamguard-cli.
+ 
+### How to build on Android Mobile? **[Recommended] [Link](https://github.com/dyc3/steamguard-cli/blob/master/docs/TERMUX_BUILD.md)**
 
-## How to run on Android? 
+### How to run on Android? 
   Use `Termux` as the terminal. **[Guide](https://github.com/dyc3/steamguard-cli/blob/master/docs/TERMUX_BUILD.md#download-precompiled-file)**
+
+Android uses the Linux settings path. 
 
 # Usage
 `steamguard-cli` looks for your `maFiles/manifest.json` in at these paths, in this order:
