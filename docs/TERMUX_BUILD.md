@@ -103,7 +103,7 @@ spent compiling dependencies. Rebuilds after code changes are much faster.
 ## Download PreCompiled File: 
 
 Alternatively, you can download the **precompiled binary** from [Releases](https://github.com/alphaxleonidas/steamguard-cli-android/releases)
-and move it to the Termix directory using the following commands (skip step 5): 
+and move it to the Termux directory using the following commands (in which case skip step 5): 
 ```bash
 termux-setup-storage
 cd ~
@@ -151,7 +151,7 @@ steamguard import --files ~/gaben.maFile
 (`import` requires the file be unencrypted; replace the filename with your
 actual one.)
 
-## 7. Setup an account
+## 7. Setup an account (If you dont have a maFile)
 ```bash
 steamguard setup
 ```
@@ -168,7 +168,7 @@ steamguard --help
   been tested fully** and if you do, make sure you do it on your **OWN 
   RISK**. The steps are the same as the original repo: [Usage](https://github.com/dyc3/steamguard-cli#usage)
   Make sure to read it fully. So far there have been no issues with the 
-  android version.
+  Android version.
   
 ## Notes specific to phone storage
 
