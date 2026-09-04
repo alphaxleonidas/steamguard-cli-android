@@ -166,7 +166,7 @@ steamguard --help
 ## IMPORTANT NOTE
   `steamguard setup` (command to setup steamguard-cli as a 2FA) **has not 
   been tested fully** and if you do, make sure you do it on your **OWN 
-  RISK**. The steps are the same as the original repo: [Usage](https://github.com/alphaxleonidas/steamguard-cli-android#usage)
+  RISK**. The steps are the same as the original repo: [Usage](https://github.com/dyc3/steamguard-cli#usage)
   Make sure to read it fully. So far there have been no issues with the 
   android version.
   
