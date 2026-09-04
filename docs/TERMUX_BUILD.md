@@ -3,8 +3,8 @@
 This builds `steamguard` directly on your Android phone, inside Termux,
 using Termux's own native Rust toolchain. No NDK, no cross-compilation, no
 desktop machine required. (If you want to cross-compile from a desktop
-instead, see `docs/ANDROID.md` — that's a different, more involved route,
-not the one this guide covers.)
+instead, that's a different, more involved route, not the one this guide 
+covers.)
 
 ## Why this is possible without extra work
 
@@ -71,7 +71,7 @@ unzip steamguard-cli-android.zip
 
 *Note: The name can differ based on the Termux version and where it was 
 installed from. In which case, you can check the directory name by running 
-`ls -a` after running `termux-storage-setup`. Adjust the file path accordingly.*
+`ls -a` after running `termux-setup-storage`. Adjust the file path accordingly.*
 
 Alternatively, cloning the GitHub repo is the **Recommended** method. Make
 sure you trust the repo because it will be handling your Steam credentials.
