@@ -1,4 +1,4 @@
-## TESTING BRANCH ... Synced with upstream. Untested builds because i want to keep the version number intact with the upstream.
+## TESTING BRANCH ... Synced with upstream. Untested builds because i want to keep the build's version number intact with the upstream.
 
 # steamguard-cli-android
   How to build on PC? **[Link](https://github.com/alphaxleonidas/steamguard-cli-android/blob/master/docs/ANDROID.md)**
@@ -16,7 +16,7 @@
 
 A command line utility for setting up and using Steam Mobile Authenticator (AKA Steam 2FA). It can also be used to respond to trade, market, and any other steam mobile confirmations that you would normally get in the app.
 
-**The only legitimate place to download steamguard-cli binaries is through ~~this~~ *original* repo's releases, or by any package manager that is linked in this document.**
+**The only legitimate place to download steamguard-cli binaries is through this repo's releases, or by any package manager that is linked in this document.**
 
 # Disclaimer
 **This utility is effectively in beta. Use this software at your own risk. Make sure to back up your maFiles regularly, and make sure to actually write down your revocation code. If you lose both of these, we can't help you, your only recourse is to beg Steam support.**
@@ -30,7 +30,7 @@ If you have no idea what the rest of this document is talking about, go read the
 - Generate 2FA codes
 - Respond to trade, market or any other confirmations
 - Encrypted storage of your 2FA secrets
-  - ~~With the option to store your encryption passkey in the system keyring~~ *Not available for Android*
+  - With the option to store your encryption passkey in the system keyring [ *Not available for Android* ]
 - Special memory-clearing data structures to prevent leaking secrets
 - QR code generation for importing 2FA secrets into other applications, like KeeWeb
 - QR code logins for quickly logging into Steam on a new device, like the Steam Deck
